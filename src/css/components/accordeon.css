@@ -1,3 +1,51 @@
 /**
 * Accordeon
 */
+.accordeon {
+    display: grid;
+    width: 150px;
+    gap: 10px;
+}
+summary {
+
+    display: flex;
+    gap: 20px;
+}
+details {
+    position: relative;
+    min-width: 100px;
+    transition: all 0.3s ease;
+    display: block;
+    background-color: lightgray;
+    border-radius: 10%;
+}
+
+details[open] {
+    display: block;
+    width: 100%;
+}
+
+details > summary + * {
+    display: block;
+    margin-top: 10px;
+}
+
+details > summary {
+    list-style: none;
+  }
+details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+.arrow {
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+
+    border-left: 30px solid grey;
+  }
+details[open] .arrow {
+    transform: rotate(90deg);
+
+}
