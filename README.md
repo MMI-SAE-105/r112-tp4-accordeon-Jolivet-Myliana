@@ -1,6 +1,6 @@
-- nom :
-- prénom :
-- URL Netlify :
+- nom : JOLIVET
+- prénom : Myliana
+- URL Netlify : https://animated-choux-edaf4d.netlify.app
 
 # Travail
 
