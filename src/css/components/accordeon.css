@@ -2,26 +2,22 @@
 * Accordeon
 */
 
-.accordeon{
-    display: flex;
-}
 
 details {
-    position: relative;
     width: 130px;
-    transition: all 1s ease-in-out;
   }
 
 details[open] {
     width: 300px;
   }
   
-  details>div{
-    padding-left: 130px;
-    width: 170px;
-    }
-details>summary {
-    position:absolute;
-    top: 0;
-    left: 0;
+  summary {
+    outline: none;
+    font-size: 1.15em;
 }
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+
